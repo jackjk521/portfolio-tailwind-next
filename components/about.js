@@ -15,14 +15,14 @@ function About() {
       <div class="col-span-12 rounded-lg bg-gray-900 p-5 sm:col-span-8">
         <div class="ps-5 pt-3">
           <Image
-            src="/images/profile_img.jpg"
+            src="/images/profile_img.png"
             width={150}
             height={0}
             className="rounded-full"
             alt="profile_img"
           />
         </div>
-        
+
         <h1 class="text-5xl font-bold p-5"> Full Stack Software Engineer</h1>
 
         <h1 className="text-5xl font-bold p-5 flex items-center">
