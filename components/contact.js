@@ -3,7 +3,7 @@ import React from "react";
 function Contact() {
   return (
     <div
-      className="container px-24 py-16 border border-gray-500 mx-auto max-w-7xl text-center "
+      className="container mx-auto max-w-7xl px-24 py-16 rounded-lg bg-gray-900 text-center "
       id="contact_me">
       <h1 class="text-5xl font-bold pt-3"> Do you have an idea </h1>
       <h1 class="text-5xl font-bold pb-3 mb-3">  you want to bring to life ?  </h1>
