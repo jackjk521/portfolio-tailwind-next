@@ -5,11 +5,11 @@ function Companies() {
   return (
     <div class="container px-5 mx-auto">
       <h1 class="text-xl font-bold p-5 text-center">
-        Companies I've worked with
+        Companies I have worked with
       </h1>
  
       {/* Company Logos  */}
-      <div class="grid grid-cols-12 gap-4 p-1 mb-3 flex items-center justify-center">
+      <div class="grid grid-cols-12 gap-4 p-1 mb-3 items-center justify-center">
         <div class="col-span-12 rounded-lg bg-black-200 p-5 sm:col-span-4">
           <Image
             src="/images/hatchit_logo.png"
