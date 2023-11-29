@@ -4,36 +4,36 @@ import Image from "next/image";
 function Companies() {
   return (
     <div class="container px-5 mx-auto">
-      <h1 class="text-xl font-bold p-5 text-center">
+      <h1 class="font-playfair-display text-2xl font-bold p-5 text-center">
         Companies I have worked with
       </h1>
  
       {/* Company Logos  */}
       <div class="grid grid-cols-12 gap-4 p-1 mb-3 items-center justify-center">
-        <div class="col-span-12 rounded-lg bg-black-200 p-5 sm:col-span-4">
+        <div class="col-span-12 rounded-lg bg-black-200 p-5 sm:col-span-4 flex justify-center">
           <Image
             src="/images/hatchit_logo.png"
             width={200}
             height={100}
-            class="max-w-xs transition duration-300 ease-in-out hover:scale-110"
+            class="max-w-xs transition duration-300 ease-in-out filter grayscale hover:scale-110"
             alt="hatchit_logo"
           />
         </div>
-        <div class="col-span-12 rounded-lg bg-black-200 p-5 sm:col-span-4">
+        <div class="col-span-12 rounded-lg bg-black-200 p-5 sm:col-span-4 flex justify-center">
           <Image
             src="/images/jairosoft_logo.png"
             width={200}
             height={100}
-            class="max-w-xs transition duration-300 ease-in-out hover:scale-110"
+            class="max-w-xs transition duration-300 ease-in-out filter grayscale hover:scale-110"
             alt="jairosoft_logo"
           />
         </div>
-        <div class="col-span-12 rounded-lg bg-black-200 p-5 sm:col-span-4">
+        <div class="col-span-12 rounded-lg bg-black-200 p-5 sm:col-span-4 flex justify-center">
           <Image
             src="/images/color_city_logo.png"
             width={200}
             height={100}
-            class="max-w-xs transition duration-300 ease-in-out hover:scale-110"
+            class="max-w-xs transition duration-300 ease-in-out filter grayscale hover:scale-110"
             alt="color_city_logo"
           />
         </div>

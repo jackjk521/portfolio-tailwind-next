@@ -11,7 +11,7 @@ module.exports = {
   theme: {
     fontFamily: {
       inter: ["var(--font-inter)", "sans-serif"],
-      "playfair-display": ["var(--font-playfair-display)", "serif"],
+      "playfair-display": ["var(--font-playfair-display)", "sans-serif"],
     },
     extend: {
       animation: {

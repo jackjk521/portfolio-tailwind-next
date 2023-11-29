@@ -20,10 +20,10 @@ function Works() {
       style={{ backgroundImage: `url('/images/dots_bg.png')`, height: "100%" }}
       id="works_experience">
       <div class="container px-7 py-7 mx-auto">
-        <h1 class="text-2xl font-bold p-5"> Works </h1>
+        <h1 class="font-playfair-display text-2xl font-bold p-5"> Works </h1>
 
-        {/* Card Start  */}
-        <div class="flex flex-wrap -m-4">
+        {/* 1st Card Start  */}
+        <div class="flex flex-wrap -m-4 mb-4">
           <div class="p-4 lg:w-1/3">
             <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
               <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
@@ -235,6 +235,11 @@ function Works() {
               </div>
             </div>
           </div>
+        </div>
+        {/* See More button  */}
+        <div class="flex justify-center w-full">
+          {" "}
+          <button class="text-xs font-medium uppercase px-5 py-3 rounded-full bg-gray-500 text-gray-50 hover:bg-green-400">See More</button>
         </div>
       </div>
     </section>

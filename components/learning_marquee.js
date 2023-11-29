@@ -11,35 +11,35 @@ function Learning_Marquee() {
           src="/images/svelte.png"
           width={50}
           height={40}
-          className="m-4"
+          className="m-8"
           alt="profile_img"
         />{" "}
         <Image
           src="/images/angular.png"
           width={50}
           height={40}
-          className="m-4"
+          className="m-8"
           alt="profile_img"
         />{" "}
         <Image
           src="/images/csharp.png"
           width={50}
           height={40}
-          className="m-4"
+          className="m-8"
           alt="profile_img"
         />{" "}
         <Image
           src="/images/powerbi.png"
           width={50}
           height={40}
-          className="m-4"
+          className="m-8"
           alt="profile_img"
         />{" "}
         <Image
           src="/images/springboot.png"
           width={50}
           height={40}
-          className="m-4"
+          className="m-8"
           alt="profile_img"
         />{" "}
       </Marquee>
