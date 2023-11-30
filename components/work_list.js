@@ -9,7 +9,7 @@ function Work_List() {
       style={{ backgroundImage: `url('/images/dots_bg.png')`, height: "100%" }}
       id="works_experience">
       <div class="container px-7 py-7 mx-auto">
-        <Link class="flex items-center" href="/">
+        <Link href="/" class="flex items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -45,7 +45,7 @@ function Work_List() {
               </p>
 
               {/* Add the arrow icon here  */}
-              <Link class="text-indigo-500 gap-2 inline-flex items-center mb-3">
+              <a class="text-indigo-500 gap-2 inline-flex items-center mb-3">
                 Learn More
                 {/* Arrow Icon  */}
                 <div className="flex items-center bg-black rounded-full">
@@ -62,7 +62,7 @@ function Work_List() {
                     />
                   </svg>
                 </div>
-              </Link>
+              </a>
 
               {/* Tech Stack Used  */}
               <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
@@ -108,7 +108,7 @@ function Work_List() {
               </p>
 
               {/* Add the arrow icon here  */}
-              <Link class="text-indigo-500 gap-2 inline-flex items-center mb-3">
+              <a class="text-indigo-500 gap-2 inline-flex items-center mb-3">
                 Learn More
                 {/* Arrow Icon  */}
                 <div className="flex items-center bg-black rounded-full">
@@ -125,7 +125,7 @@ function Work_List() {
                     />
                   </svg>
                 </div>
-              </Link>
+              </a>
 
               {/* Tech Stack Used  */}
               <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
@@ -170,7 +170,7 @@ function Work_List() {
               </p>
 
               {/* Add the arrow icon here  */}
-              <Link class="text-indigo-500 gap-2 inline-flex items-center mb-3">
+              <a class="text-indigo-500 gap-2 inline-flex items-center mb-3">
                 Learn More
                 {/* Arrow Icon  */}
                 <div className="flex items-center bg-black rounded-full">
@@ -187,7 +187,7 @@ function Work_List() {
                     />
                   </svg>
                 </div>
-              </Link>
+              </a>
 
               {/* Tech Stack Used  */}
               <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">

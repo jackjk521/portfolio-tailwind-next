@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Link from 'next/image'
+import NextLink from "next/link";
 
 function Works() {
   const arrowVariants = {
@@ -18,7 +18,7 @@ function Works() {
   return (
     <section
       class="rounded-lg body-font mb-4 bg-cover bg-no-repeat bg-gray-900"
-      style={{ backgroundImage: `url('/images/dots_bg.png')`, height: "100%" }}
+      // style={{ backgroundImage: `url('/images/dots_bg.png')`, height: "100%" }}
       id="works_experience">
       <div class="container px-7 py-7 mx-auto">
         <h1 class="font-playfair-display text-2xl font-bold p-5"> Works </h1>
@@ -40,7 +40,7 @@ function Works() {
               </p>
 
               {/* Add the arrow icon here  */}
-              <Link class="text-indigo-500 gap-2 inline-flex items-center mb-3">
+              <a class="text-indigo-500 gap-2 inline-flex items-center mb-3">
                 Learn More
                 {/* Arrow Icon  */}
                 <div className="flex items-center bg-black rounded-full">
@@ -57,7 +57,7 @@ function Works() {
                     />
                   </svg>
                 </div>
-              </Link>
+              </a>
 
               {/* Tech Stack Used  */}
               <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
@@ -103,7 +103,7 @@ function Works() {
               </p>
 
               {/* Add the arrow icon here  */}
-              <Link class="text-indigo-500 gap-2 inline-flex items-center mb-3">
+              <a class="text-indigo-500 gap-2 inline-flex items-center mb-3">
                 Learn More
                 {/* Arrow Icon  */}
                 <div className="flex items-center bg-black rounded-full">
@@ -120,7 +120,7 @@ function Works() {
                     />
                   </svg>
                 </div>
-              </Link>
+              </a>
 
               {/* Tech Stack Used  */}
               <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
@@ -165,7 +165,7 @@ function Works() {
               </p>
 
               {/* Add the arrow icon here  */}
-              <Link class="text-indigo-500 gap-2 inline-flex items-center mb-3">
+              <a class="text-indigo-500 gap-2 inline-flex items-center mb-3">
                 Learn More
                 {/* Arrow Icon  */}
                 <div className="flex items-center bg-black rounded-full">
@@ -182,7 +182,7 @@ function Works() {
                     />
                   </svg>
                 </div>
-              </Link>
+              </a>
 
               {/* Tech Stack Used  */}
               <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
@@ -216,10 +216,10 @@ function Works() {
         </div>
         {/* See More button  */}
         <div class="flex justify-center w-full">
-          {" "}
-          <Link type="button" href="/works" class="text-xs font-medium uppercase px-5 py-3 rounded-full bg-gray-500 text-gray-50 hover:bg-green-400">
-            See More
-          </Link>
+          <NextLink href="/works" className="text-xs font-medium uppercase px-5 py-3 rounded-full bg-gray-500 text-gray-50 hover:bg-green-400">
+              See More
+
+          </NextLink>
         </div>
       </div>
     </section>
