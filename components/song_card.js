@@ -15,9 +15,9 @@ function SongCard() {
             alt="magic_kong"
           />
           {/* <!-- Song Title --> */}
-          <h2 class="text-xl font-semibold text-center mb-1">Work Smart Not Hard</h2>
+          <h2 class="text-sm lg:text-xl font-semibold text-center mb-1">Work Smart Not Hard</h2>
           {/* <!-- Artist Name --> */}
-          <p class="text-gray-400 text-sm text-center">Daily Reminder</p>
+          <p class="text-gray-400 text-xs sm:text-sm text-center">Daily Reminder</p>
           {/* <!-- Music Controls --> */}
           <div class="mt-6 flex justify-center items-center">
             <button class="p-3 rounded-full bg-gray-200 hover:bg-gray-300 focus:outline-none">
