@@ -152,32 +152,34 @@ function Works() {
               </a>
 
               {/* Tech Stack Used  */}
-              <div class="container mx-auto px-10 py-6 gap-4 flex items-center justify-center">
-                <Image
-                  src="/images/nextjs.png"
-                  width={50}
-                  height={100}
-                  class="max-w-xs transition duration-300 ease-in-out hover:scale-110"
-                  alt="nextjs_logo"
-                />
-                <Image
-                  src="/images/materialui.png"
-                  width={50}
-                  height={100}
-                  class="max-w-xs transition duration-300 ease-in-out hover:scale-110"
-                  alt="materialui_logo"
-                />
-                <Image
-                  src="/images/django.png"
-                  width={50}
-                  height={100}
-                  class="max-w-xs transition duration-300 ease-in-out hover:scale-110"
-                  alt="django_logo"
-                />
+              <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
+                <div class="container mx-auto px-10 py-6 gap-4 flex items-center justify-center">
+                  <Image
+                    src="/images/nextjs.png"
+                    width={50}
+                    height={100}
+                    class="max-w-xs transition duration-300 ease-in-out hover:scale-110"
+                    alt="nextjs_logo"
+                  />
+                  <Image
+                    src="/images/materialui.png"
+                    width={50}
+                    height={100}
+                    class="max-w-xs transition duration-300 ease-in-out hover:scale-110"
+                    alt="materialui_logo"
+                  />
+                  <Image
+                    src="/images/django.png"
+                    width={50}
+                    height={100}
+                    class="max-w-xs transition duration-300 ease-in-out hover:scale-110"
+                    alt="django_logo"
+                  />
+                </div>
               </div>
             </div>
           </div>
-
+          {/* 3rd Card Start  */}
           <div class="p-4 lg:w-1/3">
             <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
               <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
@@ -239,7 +241,9 @@ function Works() {
         {/* See More button  */}
         <div class="flex justify-center w-full">
           {" "}
-          <button class="text-xs font-medium uppercase px-5 py-3 rounded-full bg-gray-500 text-gray-50 hover:bg-green-400">See More</button>
+          <button class="text-xs font-medium uppercase px-5 py-3 rounded-full bg-gray-500 text-gray-50 hover:bg-green-400">
+            See More
+          </button>
         </div>
       </div>
     </section>

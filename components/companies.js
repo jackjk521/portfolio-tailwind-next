@@ -3,7 +3,7 @@ import Image from "next/image";
 
 function Companies() {
   return (
-    <div class="container px-5 mx-auto">
+    <div class="container px-5 py-12 h-full m-auto">
       <h1 class="font-playfair-display text-2xl font-bold p-5 text-center">
         Companies I have worked with
       </h1>
