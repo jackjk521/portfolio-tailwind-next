@@ -217,9 +217,9 @@ function Works() {
         {/* See More button  */}
         <div class="flex justify-center w-full">
           {" "}
-          <a type="button" href="/works" class="text-xs font-medium uppercase px-5 py-3 rounded-full bg-gray-500 text-gray-50 hover:bg-green-400">
+          <Link type="button" href="/works" class="text-xs font-medium uppercase px-5 py-3 rounded-full bg-gray-500 text-gray-50 hover:bg-green-400">
             See More
-          </a>
+          </Link>
         </div>
       </div>
     </section>
