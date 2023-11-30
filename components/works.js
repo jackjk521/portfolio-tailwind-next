@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from 'next/image'
 
 function Works() {
   const arrowVariants = {
@@ -39,7 +40,7 @@ function Works() {
               </p>
 
               {/* Add the arrow icon here  */}
-              <a class="text-indigo-500 gap-2 inline-flex items-center mb-3">
+              <Link class="text-indigo-500 gap-2 inline-flex items-center mb-3">
                 Learn More
                 {/* Arrow Icon  */}
                 <div className="flex items-center bg-black rounded-full">
@@ -56,7 +57,7 @@ function Works() {
                     />
                   </svg>
                 </div>
-              </a>
+              </Link>
 
               {/* Tech Stack Used  */}
               <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
@@ -102,7 +103,7 @@ function Works() {
               </p>
 
               {/* Add the arrow icon here  */}
-              <a class="text-indigo-500 gap-2 inline-flex items-center mb-3">
+              <Link class="text-indigo-500 gap-2 inline-flex items-center mb-3">
                 Learn More
                 {/* Arrow Icon  */}
                 <div className="flex items-center bg-black rounded-full">
@@ -119,7 +120,7 @@ function Works() {
                     />
                   </svg>
                 </div>
-              </a>
+              </Link>
 
               {/* Tech Stack Used  */}
               <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
@@ -164,7 +165,7 @@ function Works() {
               </p>
 
               {/* Add the arrow icon here  */}
-              <a class="text-indigo-500 gap-2 inline-flex items-center mb-3">
+              <Link class="text-indigo-500 gap-2 inline-flex items-center mb-3">
                 Learn More
                 {/* Arrow Icon  */}
                 <div className="flex items-center bg-black rounded-full">
@@ -181,7 +182,7 @@ function Works() {
                     />
                   </svg>
                 </div>
-              </a>
+              </Link>
 
               {/* Tech Stack Used  */}
               <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
