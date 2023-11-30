@@ -8,16 +8,16 @@ function SongCard() {
         <div class="p-4">
           {/* <!-- Album Cover --> */}
           <Image
-            src="/images/profile_img.png"
+            src="/images/magic_kong.png"
             width={120}
             height={0}
             className="mx-auto rounded-lg mb-4 shadow-md shadow-slate-500"
-            alt="profile_img"
+            alt="magic_kong"
           />
           {/* <!-- Song Title --> */}
-          <h2 class="text-xl font-semibold text-center mb-1">Daily Grind</h2>
+          <h2 class="text-xl font-semibold text-center mb-1">Work Smart Not Hard</h2>
           {/* <!-- Artist Name --> */}
-          <p class="text-gray-400 text-sm text-center">Past Self</p>
+          <p class="text-gray-400 text-sm text-center">Daily Reminder</p>
           {/* <!-- Music Controls --> */}
           <div class="mt-6 flex justify-center items-center">
             <button class="p-3 rounded-full bg-gray-200 hover:bg-gray-300 focus:outline-none">
