@@ -1,26 +1,32 @@
 import React from "react";
-import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
-function Works() {
-  const arrowVariants = {
-    initial: { rotate: 0, fill: "white" },
-    hover: { rotate: -45, fill: "white" },
-  };
-
-  const arrowTransition = {
-    type: "spring",
-    stiffness: 100,
-    damping: 10,
-  };
-
+function Work_List() {
   return (
     <section
       class="rounded-lg body-font mb-4 bg-cover bg-no-repeat bg-gray-900"
       style={{ backgroundImage: `url('/images/dots_bg.png')`, height: "100%" }}
       id="works_experience">
       <div class="container px-7 py-7 mx-auto">
-        <h1 class="font-playfair-display text-2xl font-bold p-5"> Works </h1>
+        <Link class="flex items-center" href="/">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-5 h-5 rounded-full inline-block">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
+            />
+          </svg>
+          <h1 class="font-playfair-display text-2xl font-bold p-5">
+            Categories
+          </h1>
+        </Link>
 
         {/* Card List  */}
         <div class="flex flex-wrap -m-4 mb-4">
@@ -213,16 +219,9 @@ function Works() {
           </div>
           {/* 3rd Card END  */}
         </div>
-        {/* See More button  */}
-        <div class="flex justify-center w-full">
-          {" "}
-          <a type="button" href="/works" class="text-xs font-medium uppercase px-5 py-3 rounded-full bg-gray-500 text-gray-50 hover:bg-green-400">
-            See More
-          </a>
-        </div>
       </div>
     </section>
   );
 }
 
-export default Works;
+export default Work_List;
