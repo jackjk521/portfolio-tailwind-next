@@ -1,7 +1,7 @@
 {
     "theme_color": "#0a0a0b",
     "background_color": "#10100f",
-    "display": "browser",
+    "display": "standalone",
     "scope": "/",
     "start_url": "/",
     "name": "JCHU_Portfolio",
