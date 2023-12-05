@@ -3,11 +3,26 @@ import Image from "next/image";
 import Link from "next/link";
 import WorkCard from "./utlity/work_card";
 
+// Images for Custom BMS
+const custom_bms_images = [
+  {
+    src: "/images/profile_img.png",
+    alt: "Image 1",
+  },
+  {
+    src: "/images/profile_img.png",
+    alt: "Image 2",
+  },
+  {
+    src: "/images/profile_img.png",
+    alt: "Image 3",
+  },
+];
+
 function Work_List() {
   return (
     <section
       class="rounded-lg body-font mb-4 bg-cover bg-no-repeat bg-gray-900"
-      style={{ backgroundImage: `url('/images/dots_bg.png')`, height: "100%" }}
       id="works_experience">
       <div class="container px-7 py-7 mx-auto">
         <Link href="/" class="flex items-center">
@@ -25,19 +40,19 @@ function Work_List() {
             />
           </svg>
           <h1 class="font-playfair-display text-2xl font-bold p-5">
-            Categories
+            Project List
           </h1>
         </Link>
 
         {/* Card List  */}
         <div class="flex flex-wrap -m-4 mb-4">
-          {/* 1st Card Start  */}
+          {/* Featured START  */}
           <WorkCard
-            work_type="PERSONAL"
+            work_type="Web Application"
             work_name="Custom BMS"
-            work_description=" Photo booth fam kinfolk cold-pressed sriracha leggings jianbing
-                microdosing tousled waistcoat."
-            work_link="/">
+            work_description="Custom BMS for Color City for inventory, orders and branch management."
+            work_link="/"
+            images={custom_bms_images}>
             {/* Tech Stack Used  */}
             <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
               <div class="container mx-auto px-10 py-6 gap-4 flex items-center justify-center">
@@ -67,131 +82,223 @@ function Work_List() {
             {/* Tech Stack end  */}
           </WorkCard>
 
-          {/* 2nd Card START  */}
-          <div class="p-4 lg:w-1/3">
-            <div class="h-full border border-gray-800  bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
-              <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
-                PERSONAL
-              </h2>
-              <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-50 mb-3">
-                Custom BMS System
-              </h1>
-              <p class="leading-relaxed mb-3">
-                Photo booth fam kinfolk cold-pressed sriracha leggings jianbing
-                microdosing tousled waistcoat.
-              </p>
-
-              {/* Add the arrow icon here  */}
-              <a class="text-indigo-500 gap-2 inline-flex items-center mb-3">
-                Learn More
-                {/* Arrow Icon  */}
-                <div className="flex items-center bg-black rounded-full">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="w-7 h-7 transform origin-center transition-transform duration-300 hover:-rotate-45"
-                    viewBox="0 0 24 24"
-                    fill="white">
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke="white"
-                      d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
-                    />
-                  </svg>
-                </div>
-              </a>
-
-              {/* Tech Stack Used  */}
-              <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
-                <div class="container mx-auto px-10 py-6 gap-4 flex items-center justify-center">
-                  <Image
-                    src="/images/nextjs.png"
-                    width={50}
-                    height={100}
-                    class="max-w-xs transition duration-300 ease-in-out hover:scale-110"
-                    alt="nextjs_logo"
-                  />
-                  <Image
-                    src="/images/materialui.png"
-                    width={50}
-                    height={100}
-                    class="max-w-xs transition duration-300 ease-in-out hover:scale-110"
-                    alt="materialui_logo"
-                  />
-                  <Image
-                    src="/images/django.png"
-                    width={50}
-                    height={100}
-                    class="max-w-xs transition duration-300 ease-in-out hover:scale-110"
-                    alt="django_logo"
-                  />
-                </div>
+          <WorkCard
+            work_type="Research Paper"
+            work_name="EduTrack"
+            work_description="IBCOL Finalist Paper on EduTrack: A Blockchain-Powered Web System for Productivity, Incentives and Charity"
+            work_link="/"
+            images={custom_bms_images}>
+            {/* Tech Stack Used  */}
+            <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
+              <div class="container mx-auto px-10 py-6 gap-4 flex items-center justify-center">
+                <Image
+                  src="/images/notion.png"
+                  width={50}
+                  height={100}
+                  class="max-w-xs transition duration-300 ease-in-out hover:scale-110"
+                  alt="notion_logo"
+                />
+                <Image
+                  src="/images/solidity.svg"
+                  width={50}
+                  height={100}
+                  class="max-w-xs transition duration-300 ease-in-out hover:scale-110"
+                  alt="solidity_logo"
+                />
               </div>
             </div>
-          </div>
-          {/* 3rd Card Start  */}
-          <div class="p-4 lg:w-1/3">
-            <div class="h-full border border-gray-800  bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
-              <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
-                PERSONAL
-              </h2>
-              <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-50 mb-3">
-                Custom BMS System
-              </h1>
-              <p class="leading-relaxed mb-3">
-                Photo booth fam kinfolk cold-pressed sriracha leggings jianbing
-                microdosing tousled waistcoat.
-              </p>
+            {/* Tech Stack end  */}
+          </WorkCard>
 
-              {/* Add the arrow icon here  */}
-              <a class="text-indigo-500 gap-2 inline-flex items-center mb-3">
-                Learn More
-                {/* Arrow Icon  */}
-                <div className="flex items-center bg-black rounded-full">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="w-7 h-7 transform origin-center transition-transform duration-300 hover:-rotate-45"
-                    viewBox="0 0 24 24"
-                    fill="white">
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke="white"
-                      d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
-                    />
-                  </svg>
-                </div>
-              </a>
-
-              {/* Tech Stack Used  */}
-              <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
-                <div class="container mx-auto px-10 py-6 gap-4 flex items-center justify-center">
-                  <Image
-                    src="/images/nextjs.png"
-                    width={50}
-                    height={100}
-                    class="max-w-xs transition duration-300 ease-in-out hover:scale-110"
-                    alt="nextjs_logo"
-                  />
-                  <Image
-                    src="/images/materialui.png"
-                    width={50}
-                    height={100}
-                    class="max-w-xs transition duration-300 ease-in-out hover:scale-110"
-                    alt="materialui_logo"
-                  />
-                  <Image
-                    src="/images/django.png"
-                    width={50}
-                    height={100}
-                    class="max-w-xs transition duration-300 ease-in-out hover:scale-110"
-                    alt="django_logo"
-                  />
-                </div>
+          <WorkCard
+            work_type="Website"
+            work_name="YM Cargo Company Website"
+            work_description="Company Website for YM Cargo PH"
+            work_link="/"
+            images={custom_bms_images}>
+            {/* Tech Stack Used  */}
+            <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
+              <div class="container mx-auto px-10 py-6 gap-4 flex items-center justify-center">
+                <Image
+                  src="/images/php.png"
+                  width={50}
+                  height={100}
+                  class="max-w-xs transition duration-300 ease-in-out hover:scale-110"
+                  alt="php_logo"
+                />
               </div>
             </div>
+            {/* Tech Stack end  */}
+          </WorkCard>
+          {/* Featured END  */}
+
+          <div class="container px-7 py-7 mx-auto">
+            <h1 class="font-playfair-display text-2xl font-bold p-5">
+              Web Applications
+            </h1>
           </div>
-          {/* 3rd Card END  */}
+
+            {/* Featured START  */}
+            <WorkCard
+            work_type="Web Application"
+            work_name="Custom BMS"
+            work_description="Custom BMS for Color City for inventory, orders and branch management."
+            work_link="/"
+            images={custom_bms_images}>
+            {/* Tech Stack Used  */}
+            <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
+              <div class="container mx-auto px-10 py-6 gap-4 flex items-center justify-center">
+                <Image
+                  src="/images/nextjs.png"
+                  width={50}
+                  height={100}
+                  class="max-w-xs transition duration-300 ease-in-out hover:scale-110"
+                  alt="nextjs_logo"
+                />
+                <Image
+                  src="/images/materialui.png"
+                  width={50}
+                  height={100}
+                  class="max-w-xs transition duration-300 ease-in-out hover:scale-110"
+                  alt="materialui_logo"
+                />
+                <Image
+                  src="/images/django.png"
+                  width={50}
+                  height={100}
+                  class="max-w-xs transition duration-300 ease-in-out hover:scale-110"
+                  alt="django_logo"
+                />
+              </div>
+            </div>
+            {/* Tech Stack end  */}
+          </WorkCard>
+
+          <WorkCard
+            work_type="Web Application"
+            work_name="Clinic Appointment System"
+            work_description="Custom system for clinics to manage appointments, patient records and purchases"
+            work_link="/"
+            images={custom_bms_images}>
+            {/* Tech Stack Used  */}
+            <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
+              <div class="container mx-auto px-10 py-6 gap-4 flex items-center justify-center">
+                <Image
+                  src="/images/react.png"
+                  width={50}
+                  height={100}
+                  class="max-w-xs transition duration-300 ease-in-out hover:scale-110"
+                  alt="react_logo"
+                />
+                <Image
+                  src="/images/laravel.png"
+                  width={50}
+                  height={100}
+                  class="max-w-xs transition duration-300 ease-in-out hover:scale-110"
+                  alt="laravel_logo"
+                />
+              </div>
+            </div>
+            {/* Tech Stack end  */}
+          </WorkCard>
+          {/* Featured END  */}
+
+
+          <div class="container px-7 py-7 mx-auto">
+            <h1 class="font-playfair-display text-2xl font-bold p-5">Games</h1>
+          </div>
+          {/* Games START  */}
+          <WorkCard
+            work_type="Games"
+            work_name="SlitherUI"
+            work_description="Snake game with the integration of the game called Life into the game's mechanics"
+            work_link="/"
+            images={custom_bms_images}>
+            {/* Tech Stack Used  */}
+            <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
+              <div class="container mx-auto px-10 py-6 gap-4 flex items-center justify-center">
+                <Image
+                  src="/images/java.png"
+                  width={50}
+                  height={100}
+                  class="max-w-xs transition duration-300 ease-in-out hover:scale-110"
+                  alt="nextjs_logo"
+                />
+                {/* <Image
+                  src="/images/materialui.png"
+                  width={50}
+                  height={100}
+                  class="max-w-xs transition duration-300 ease-in-out hover:scale-110"
+                  alt="materialui_logo"
+                />
+                <Image
+                  src="/images/django.png"
+                  width={50}
+                  height={100}
+                  class="max-w-xs transition duration-300 ease-in-out hover:scale-110"
+                  alt="django_logo"
+                /> */}
+              </div>
+            </div>
+            {/* Tech Stack end  */}
+          </WorkCard>
+          {/* Games END  */}
+
+          <div class="container px-7 py-7 mx-auto">
+            <h1 class="font-playfair-display text-2xl font-bold p-5">
+              Research Papers
+            </h1>
+          </div>
+            {/* Research Paper START  */}
+          <WorkCard
+            work_type="Research Paper"
+            work_name="EduTrack"
+            work_description="IBCOL Finalist Paper on EduTrack: A Blockchain-Powered Web System for Productivity, Incentives and Charity"
+            work_link="/"
+            images={custom_bms_images}>
+            {/* Tech Stack Used  */}
+            <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
+              <div class="container mx-auto px-10 py-6 gap-4 flex items-center justify-center">
+                <Image
+                  src="/images/notion.png"
+                  width={50}
+                  height={100}
+                  class="max-w-xs transition duration-300 ease-in-out hover:scale-110"
+                  alt="notion_logo"
+                />
+                <Image
+                  src="/images/solidity.svg"
+                  width={50}
+                  height={100}
+                  class="max-w-xs transition duration-300 ease-in-out hover:scale-110"
+                  alt="solidity_logo"
+                />
+              </div>
+            </div>
+            {/* Tech Stack end  */}
+          </WorkCard>
+
+          <WorkCard
+            work_type="Data Analysis"
+            work_name="Bike Rental Analysis"
+            work_description="Analyzing data of bike rentals within specific area"
+            work_link="/"
+            images={custom_bms_images}>
+            {/* Tech Stack Used  */}
+            <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
+              <div class="container mx-auto px-10 py-6 gap-4 flex items-center justify-center">
+                <Image
+                  src="/images/python.png"
+                  width={50}
+                  height={100}
+                  class="max-w-xs transition duration-300 ease-in-out hover:scale-110"
+                  alt="python_logo"
+                />
+              </div>
+            </div>
+            {/* Tech Stack end  */}
+          </WorkCard>
+          {/* Research Paper END  */}
         </div>
       </div>
     </section>

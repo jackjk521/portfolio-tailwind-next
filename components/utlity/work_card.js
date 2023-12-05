@@ -1,12 +1,14 @@
 import React from "react";
 import Image from 'next/image'
+import ReusablePopover from "./popover";
 
-function WorkCard({work_type, work_name, work_description, work_link, children, }) {
+function WorkCard({work_type, work_name, work_description, work_link, children, images = null }) {
+  // console.log(images)
   return (
     <React.Fragment>
       {" "}
       <div class="p-4 lg:w-1/3">
-        <div class="h-full border border-gray-800  bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+        <div class="h-full border border-gray-700  bg-gray-700 bg-opacity-50 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
           <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
             {work_type}
           </h2>
@@ -23,7 +25,7 @@ function WorkCard({work_type, work_name, work_description, work_link, children, 
             {/* Arrow Icon  */}
 
             {/* Add link here  */}
-            <div className="flex items-center bg-black rounded-full">
+            <div className="flex items-center bg-gray-700 rounded-full">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="w-7 h-7 transform origin-center transition-transform duration-300 hover:-rotate-45"
@@ -38,6 +40,8 @@ function WorkCard({work_type, work_name, work_description, work_link, children, 
               </svg>
             </div>
           </a>
+
+          {/* <ReusablePopover buttonText="Learn More" images={images}/> */}
 
             {children}
         </div>
