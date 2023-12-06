@@ -312,7 +312,7 @@ function Work_List() {
             work_type="Research Paper"
             work_name="EduTrack"
             work_description="IBCOL Finalist Paper on EduTrack: A Blockchain-Powered Web System for Productivity, Incentives and Charity"
-            work_link="/"
+            work_link="https://jakc423.notion.site/EduTrack-A-Blockchain-Powered-Web-System-for-Productivity-Incentives-and-Charity-fe07046fa842481a9d5864314c66d582"
             images={custom_bms_images}>
             {/* Tech Stack Used  */}
             <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
