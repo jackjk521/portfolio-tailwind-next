@@ -82,7 +82,7 @@ const custom_bms_images = [
             work_type="Research Paper"
             work_name="EduTrack"
             work_description="IBCOL Finalist Submission on EduTrack: A Blockchain-Powered Web System for Productivity, Incentives and Charity"
-            work_link="/"
+            work_link="https://jakc423.notion.site/jakc423/EduTrack-A-Blockchain-Powered-Web-System-for-Productivity-Incentives-and-Charity-fe07046fa842481a9d5864314c66d582"
             images={custom_bms_images}>
             {/* Tech Stack Used  */}
             <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
@@ -116,8 +116,8 @@ const custom_bms_images = [
           <WorkCard
             work_type="Website"
             work_name="YM Cargo Company Website"
-            work_description="Company Website for YM Cargo PH"
-            work_link="/"
+            work_description="Company Website for YM Cargo PH under HatchIt Solutions"
+            work_link="https://ymcargo.ph/"
             images={custom_bms_images}>
             {/* Tech Stack Used  */}
             <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
