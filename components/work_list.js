@@ -260,6 +260,26 @@ function Work_List() {
             </div>
             {/* Tech Stack end  */}
           </WorkCard>
+          <WorkCard
+            work_type="Website"
+            work_name="Cafe Blogsite"
+            work_description="Cafe website from my own inspiration"
+            work_link="https://chucafeandbar.mydurable.com/"
+            images={custom_bms_images}>
+            {/* Tech Stack Used  */}
+            <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
+              <div class="container mx-auto px-10 py-6 gap-4 flex items-center justify-center">
+                <Image
+                  src="/images/durable.png"
+                  width={50}
+                  height={100}
+                  class="max-w-xs transition duration-300 ease-in-out hover:scale-110"
+                  alt="durable_logo"
+                />
+              </div>
+            </div>
+            {/* Tech Stack end  */}
+          </WorkCard>
           {/* Web Aplication END  */}
 
           <div class="container px-7 py-7 mx-auto">
