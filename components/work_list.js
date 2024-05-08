@@ -146,6 +146,35 @@ function Work_List() {
           {/* Web Aplication START  */}
           <WorkCard
             work_type="Web Application"
+            work_name="Surgtech Medical BMS"
+            work_description="BMS for Surgtech Medical to handle pre op, post op and inventory management ."
+            work_link="NDA"
+            images={custom_bms_images}>
+            {/* Tech Stack Used  */}
+            <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
+              <div class="container mx-auto px-10 py-6 gap-4 flex items-center justify-center">
+                <Image
+                  src="/images/nextjs.png"
+                  width={50}
+                  height={100}
+                  class="max-w-xs transition duration-300 ease-in-out hover:scale-110"
+                  alt="nextjs_logo"
+                />
+
+                <Image
+                  src="/images/django.png"
+                  width={50}
+                  height={100}
+                  class="max-w-xs transition duration-300 ease-in-out hover:scale-110"
+                  alt="django_logo"
+                />
+              </div>
+            </div>
+            {/* Tech Stack end  */}
+          </WorkCard>
+
+          <WorkCard
+            work_type="Web Application"
             work_name="Custom BMS"
             work_description="Custom BMS for Color City for inventory, orders and branch management."
             work_link="/"
@@ -161,18 +190,18 @@ function Work_List() {
                   alt="nextjs_logo"
                 />
                 <Image
-                  src="/images/materialui.png"
+                  src="/images/tailwindcss.png"
                   width={50}
                   height={100}
                   class="max-w-xs transition duration-300 ease-in-out hover:scale-110"
-                  alt="materialui_logo"
+                  alt="tailwindcss_logo"
                 />
                 <Image
-                  src="/images/django.png"
+                  src="/images/supabase.png"
                   width={50}
                   height={100}
                   class="max-w-xs transition duration-300 ease-in-out hover:scale-110"
-                  alt="django_logo"
+                  alt="supabase_logo"
                 />
               </div>
             </div>
@@ -206,6 +235,7 @@ function Work_List() {
             </div>
             {/* Tech Stack end  */}
           </WorkCard>
+
           <WorkCard
             work_type="Web Application"
             work_name="King's Quality BMS"
@@ -233,6 +263,7 @@ function Work_List() {
             </div>
             {/* Tech Stack end  */}
           </WorkCard>
+          
           <WorkCard
             work_type="Web Application"
             work_name="YM Cargo BMS"
