@@ -144,6 +144,36 @@ function Work_List() {
           </div>
 
           {/* Web Aplication START  */}
+
+          <WorkCard
+            work_type="Website"
+            work_name="PizzaPy Cebu}"
+            work_description="Website for the Python community in Cebu."
+            work_link="IN PROGRESS"
+            images={custom_bms_images}>
+            {/* Tech Stack Used  */}
+            <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
+              <div class="container mx-auto px-10 py-6 gap-4 flex items-center justify-center">
+                <Image
+                  src="/images/htmx.png"
+                  width={50}
+                  height={100}
+                  class="max-w-xs transition duration-300 ease-in-out hover:scale-110"
+                  alt="htmx_logo"
+                />
+
+                <Image
+                  src="/images/django.png"
+                  width={50}
+                  height={100}
+                  class="max-w-xs transition duration-300 ease-in-out hover:scale-110"
+                  alt="django_logo"
+                />
+              </div>
+            </div>
+            {/* Tech Stack end  */}
+          </WorkCard>
+
           <WorkCard
             work_type="Web Application"
             work_name="Surgtech Medical BMS"
@@ -263,7 +293,7 @@ function Work_List() {
             </div>
             {/* Tech Stack end  */}
           </WorkCard>
-          
+
           <WorkCard
             work_type="Web Application"
             work_name="YM Cargo BMS"
@@ -291,6 +321,8 @@ function Work_List() {
             </div>
             {/* Tech Stack end  */}
           </WorkCard>
+
+
           <WorkCard
             work_type="Website"
             work_name="Cafe Blogsite"
